@@ -1,0 +1,151 @@
+
+.ecard {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 1.25rem;
+	max-width: 37.5rem;
+	// color: black;
+	box-sizing: border-box;
+}
+
+.ecard-imgs {
+  position: relative;
+  margin-bottom: 120px;
+
+}
+
+.ecard-background {
+  display: block;
+	margin-bottom: 1.69rem;
+	text-align: center;
+  min-height: 286px;
+  width: 100%;
+  min-width: 400px;
+
+  background-image: linear-gradient(to bottom, rgba(21, 21, 21, 0), rgba(21, 21, 21, 1)), url(../assets/images/Background.svg);
+  background-size: cover;
+
+  img {
+    width: 100%;
+  }
+}
+
+.ecard-logo {
+  background-color: rgba(21, 21, 21, 1);
+  padding: 20px;
+  border-radius: 35px;
+
+	margin-top: 5rem;
+	margin-bottom: 1.69rem;
+	text-align: center;
+  min-width: 400px;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// img, svg {
+// 	vertical-align: middle;
+// }
+
+.ecard-name {
+  font-size: 48pt;
+  color: rgba(220, 220, 220, 1);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  p {
+    margin: 0 !important;
+    line-height: 0.8;
+  }
+
+  span {
+    color: rgba(255, 47, 0, 1);
+  }
+}
+
+.ecard-thanks {
+  font-size: 10pt;
+  color: rgba(25, 211, 255, 1);
+  text-align: center;
+  text-transform: uppercase;
+
+  p {
+    margin: 0;
+    font-weight: 700;
+  }
+}
+
+.ecard-location {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  text-transform: uppercase;
+
+  i {
+    color: rgba(255, 13, 103, 1);
+    font-size: 10pt;
+    font-weight: 700;
+
+    span {
+      font-family: Arial;
+      margin-left: 10px;
+      font-size: 12pt;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+.ecard-cerro {
+  margin: 30px 0 40px 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.ecard-links {
+  display: flex;
+  justify-content: space-evenly;
+
+  .ecard-column {
+    display: block;
+  }
+
+  h5 {
+    color: rgba(255, 47, 0, 1);
+    font-size: 14pt;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 1rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-size: 10pt;
+    transition: all .2s ease-in-out;
+  }
+
+  i {
+    transition: all .2s ease-in-out;
+    color: rgba(25, 211, 255, 1);
+    font-size: 16pt;
+    margin-right: 8px;
+  }
+}
