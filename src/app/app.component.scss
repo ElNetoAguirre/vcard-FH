@@ -4,15 +4,15 @@
 	flex-direction: column;
 	margin: 0 auto;
 	width: 100%;
-	padding: 0 1.25rem;
-	max-width: 37.5rem;
-	// color: black;
+	padding: 0;
+	max-width: 50rem;
 	box-sizing: border-box;
+  overflow: hidden;
 }
 
 .ecard-imgs {
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 12rem;
 
 }
 
@@ -20,57 +20,58 @@
   display: block;
 	margin-bottom: 1.69rem;
 	text-align: center;
-  min-height: 286px;
+  min-height: 28.6rem;
   width: 100%;
-  min-width: 400px;
+  min-width: 40rem;
 
   background-image: linear-gradient(to bottom, rgba(21, 21, 21, 0), rgba(21, 21, 21, 1)), url(../assets/images/Background.svg);
   background-size: cover;
-
-  img {
-    width: 100%;
-  }
 }
 
 .ecard-logo {
   background-color: rgba(21, 21, 21, 1);
-  padding: 20px;
-  border-radius: 35px;
+  padding: 2rem;
+  border-radius: 3.5rem;
 
 	margin-top: 5rem;
 	margin-bottom: 1.69rem;
 	text-align: center;
-  min-width: 400px;
+  min-width: 40rem;
 
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (max-width: 25rem) {
+    min-width: 30rem;
+    img {
+      width: 95%;
+    }
+  }
 }
 
-// img, svg {
-// 	vertical-align: middle;
-// }
-
 .ecard-name {
-  font-size: 48pt;
+  font-size: 5rem;
   color: rgba(220, 220, 220, 1);
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
 
   p {
+    font-size: 5rem;
     margin: 0 !important;
     line-height: 0.8;
   }
 
   span {
+    font-size: 5rem;
     color: rgba(255, 47, 0, 1);
   }
 }
 
 .ecard-thanks {
-  font-size: 10pt;
+  font-size: 1rem;
   color: rgba(25, 211, 255, 1);
   text-align: center;
   text-transform: uppercase;
@@ -89,20 +90,20 @@
 
   i {
     color: rgba(255, 13, 103, 1);
-    font-size: 10pt;
+    font-size: 1.5rem;
     font-weight: 700;
 
     span {
       font-family: Arial;
-      margin-left: 10px;
-      font-size: 12pt;
+      margin-left: 1rem;
+      font-size: 1.8rem;
       color: rgba(255, 255, 255, 1);
     }
   }
 }
 
 .ecard-cerro {
-  margin: 30px 0 40px 0;
+  margin: 3rem 0 4rem 0;
 
   img {
     width: 100%;
@@ -119,7 +120,7 @@
 
   h5 {
     color: rgba(255, 47, 0, 1);
-    font-size: 14pt;
+    font-size: 2rem;
     text-transform: uppercase;
   }
 
@@ -138,14 +139,14 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
-    font-size: 10pt;
+    font-size: 1.5rem;
     transition: all .2s ease-in-out;
   }
 
   i {
     transition: all .2s ease-in-out;
     color: rgba(25, 211, 255, 1);
-    font-size: 16pt;
-    margin-right: 8px;
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
   }
 }
